@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@aws-amplify/ui-vue": "^2.4.25",
+    "@aws-sdk/client-lex-runtime-v2": "^3.268.0",
+    "@aws-sdk/middleware-apply-body-checksum": "^3.267.0",
     "aws-amplify": "^4.3.42",
     "maplibre-gl": "^2.4.0",
     "maplibre-gl-js-amplify": "^2.1.0",
