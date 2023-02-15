@@ -1,6 +1,6 @@
 {
-    "resourceName": "TranlateTextEN2JP",
-    "convertPolicyName": "translateTextPolicy44d84aa5",
+    "resourceName": "translateTextEN2JP",
+    "convertPolicyName": "translateTextPolicyb17a7f96",
     "authRoleName": {
         "Ref": "AuthRoleName"
     },

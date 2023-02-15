@@ -11,7 +11,7 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "predictions": {
-    "TranlateTextEN2JP": {
+    "translateTextEN2JP": {
       "region": "string",
       "sourceLang": "string",
       "targetLang": "string"
