@@ -16,7 +16,8 @@
         "hnamplify202334a49b11": {}
       },
       "predictions": {
-        "translateTextEN2JP": {}
+        "translateTextEN2JP": {},
+        "identifyLabelse92d8c16": {}
       }
     }
   }
