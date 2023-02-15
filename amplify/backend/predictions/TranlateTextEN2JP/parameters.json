@@ -1,0 +1,14 @@
+{
+    "resourceName": "TranlateTextEN2JP",
+    "convertPolicyName": "translateTextPolicy44d84aa5",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "convertType": "translateText",
+    "sourceLang": "en",
+    "targetLang": "ja",
+    "access": "auth"
+}
