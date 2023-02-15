@@ -17,7 +17,12 @@
       },
       "predictions": {
         "translateTextEN2JP": {},
-        "identifyLabelse92d8c16": {}
+        "identifyLabelse92d8c16": {},
+        "interpretTextf0b5ca79": {},
+        "identifyText1f4dc289": {}
+      },
+      "geo": {
+        "mapcc7709cf": {}
       }
     }
   }

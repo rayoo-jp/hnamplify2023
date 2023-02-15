@@ -25,12 +25,41 @@
       "service": "Cognito"
     }
   },
+  "geo": {
+    "mapcc7709cf": {
+      "accessType": "AuthorizedUsers",
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "hnamplify202334a49b11"
+        }
+      ],
+      "isDefault": true,
+      "mapStyle": "VectorHereExplore",
+      "providerPlugin": "awscloudformation",
+      "service": "Map"
+    }
+  },
   "predictions": {
     "identifyLabelse92d8c16": {
       "dependsOn": [],
       "identifyType": "identifyLabels",
       "providerPlugin": "awscloudformation",
       "service": "Rekognition"
+    },
+    "identifyText1f4dc289": {
+      "dependsOn": [],
+      "identifyType": "identifyText",
+      "providerPlugin": "awscloudformation",
+      "service": "Rekognition"
+    },
+    "interpretTextf0b5ca79": {
+      "interpretType": "interpretText",
+      "providerPlugin": "awscloudformation",
+      "service": "Comprehend"
     },
     "translateTextEN2JP": {
       "convertType": "translateText",

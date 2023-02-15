@@ -10,8 +10,24 @@ export type AmplifyDependentResourcesAttributes = {
       "UserPoolName": "string"
     }
   },
+  "geo": {
+    "mapcc7709cf": {
+      "Arn": "string",
+      "Name": "string",
+      "Region": "string",
+      "Style": "string"
+    }
+  },
   "predictions": {
     "identifyLabelse92d8c16": {
+      "region": "string",
+      "type": "string"
+    },
+    "identifyText1f4dc289": {
+      "format": "string",
+      "region": "string"
+    },
+    "interpretTextf0b5ca79": {
       "region": "string",
       "type": "string"
     },
