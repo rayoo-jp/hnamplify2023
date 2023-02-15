@@ -36,7 +36,7 @@ amplify/mock-api-resources
 amplify/backend/amplify-meta.json
 amplify/backend/.temp
 # add by Hiro 20230215
-# amplify-backup/
+amplify-backup/
 
 build/
 dist/
