@@ -1,6 +1,6 @@
 <template>
   <input id="check1" class="check" type="radio" name="ai" />
-  <label class="label" for="check1"> テキスト翻訳 - English to Japanese - Amazon Translate </label>
+  <label class="label" for="check1"> テキスト翻訳 -  Japanese to English - Amazon Translate </label>
   <div class="content">
     <TranslateText />
   </div>
