@@ -38,6 +38,11 @@ export type AmplifyDependentResourcesAttributes = {
       "region": "string",
       "type": "string"
     },
+    "speechGenerator68f43cd8": {
+      "language": "string",
+      "region": "string",
+      "voice": "string"
+    },
     "translateTextEN2JP": {
       "region": "string",
       "sourceLang": "string",

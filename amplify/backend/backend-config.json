@@ -94,6 +94,11 @@
       "providerPlugin": "awscloudformation",
       "service": "Comprehend"
     },
+    "speechGenerator68f43cd8": {
+      "convertType": "speechGenerator",
+      "providerPlugin": "awscloudformation",
+      "service": "Polly"
+    },
     "translateTextEN2JP": {
       "convertType": "translateText",
       "providerPlugin": "awscloudformation",

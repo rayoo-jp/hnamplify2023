@@ -26,6 +26,7 @@
   <input id="check5" class="check" type="radio" name="ai" />
   <label class="label" for="check5"> テキストスピーチ（日本語） - Amazon Polly </label>
   <div class="content">
+    <TextSpeech />
   </div>
 </template>
 
@@ -35,6 +36,7 @@ import TranslateText from '@/components/TranslateTextEN2JP.vue';
 import IdentifyLabels from '@/components/IdentifyLabels.vue';
 import IdentifyText from '@/components/IdentifyText.vue';
 import InterpretText from '@/components/InterpretText.vue';
+import TextSpeech from '@/components/TextSpeech.vue';
 export default {
   components: {
     // 追加 3
@@ -42,6 +44,7 @@ export default {
     IdentifyLabels,
     IdentifyText,
     InterpretText,
+    TextSpeech,
   },
 };
 </script>
