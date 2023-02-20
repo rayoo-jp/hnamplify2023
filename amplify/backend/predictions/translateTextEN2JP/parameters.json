@@ -9,6 +9,6 @@
     },
     "convertType": "translateText",
     "sourceLang": "ja",
-    "targetLang": "en",
+    "targetLang": "zh",
     "access": "auth"
 }

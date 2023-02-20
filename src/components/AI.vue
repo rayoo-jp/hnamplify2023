@@ -1,6 +1,6 @@
 <template>
   <input id="check1" class="check" type="radio" name="ai" />
-  <label class="label" for="check1"> テキスト翻訳 -  Japanese to English - Amazon Translate </label>
+  <label class="label" for="check1"> テキスト翻訳 -  Japanese to Chinees with Speech - Amazon Translate/Polly </label>
   <div class="content">
     <TranslateText />
   </div>
@@ -32,7 +32,7 @@
 
 <script>
 // 追加 2
-import TranslateText from '@/components/TranslateTextEN2JP.vue';
+import TranslateText from '@/components/TranslateText.vue';
 import IdentifyLabels from '@/components/IdentifyLabels.vue';
 import IdentifyText from '@/components/IdentifyText.vue';
 import InterpretText from '@/components/InterpretText.vue';

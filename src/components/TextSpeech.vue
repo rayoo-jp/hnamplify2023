@@ -15,7 +15,6 @@ export default {
 
         const speech = () => {
             // Text Speech の実装
-            // Text Speech の実装
             Predictions.convert({
                 textToSpeech: {
                     source: {
@@ -24,14 +23,20 @@ export default {
                 },
             })
                 .then((result) => {
+console.log(result);
                     const AudioContext = window.AudioContext || window.webkitAudioContext;
                     const audioCtx = new AudioContext();
                     const source = audioCtx.createBufferSource();
+
+console.log('AudioContext', AudioContext);
+console.log('audioCtx', audioCtx);
+console.log('Before',source);
 
                     audioCtx.decodeAudioData(result.audioStream, (buffer) => {
                         source.buffer = buffer;
                         source.connect(audioCtx.destination);
                         source.start(0);
+console.log('After',source);
                     });
                 })
                 .catch((error) => console.warn(error));

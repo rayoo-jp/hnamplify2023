@@ -8,7 +8,7 @@
         "Ref": "UnauthRoleName"
     },
     "convertType": "speechGenerator",
-    "language": "ja-JP",
-    "voice": "Takumi",
+    "language": "cmn-CN",
+    "voice": "Zhiyu",
     "access": "auth"
 }

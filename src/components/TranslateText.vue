@@ -5,6 +5,9 @@
   <div class="right">
     <textarea class="ioarea" v-model="translatedText" disabled> </textarea>
   </div>
+  <div class="right">
+    <button type="button" @click="speech">Speech</button>
+  </div>
 </template>
 
 <script>
@@ -14,7 +17,8 @@ import { ref, watch } from 'vue';
 export default {
   setup() {
     const inputText = ref('');
-    const translatedText = ref('Translated strings');
+    const translatedText = ref('翻訳する文字列');
+    const textToSpeech = ref('翻訳する文字列');
 
     const translate = (text) => {
       if (!text.length) {
@@ -37,17 +41,47 @@ export default {
           console.warn({ error });
         });
       // ↑↑↑↑↑↑
-
     };
 
     watch(inputText, (inputText) => {
       translate(inputText);
     });
 
+
+    const speech = () => {
+      // Text Speech の実装
+      Predictions.convert({
+        // inputText = translatedText;
+        textToSpeech: {
+          source: {
+            text: translatedText.value,
+          },
+        },
+      })
+        .then((result) => {
+          console.log('speech', result);
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          const audioCtx = new AudioContext();
+          const source = audioCtx.createBufferSource();
+
+          audioCtx.decodeAudioData(result.audioStream, (buffer) => {
+            source.buffer = buffer;
+            source.connect(audioCtx.destination);
+            source.start(0);
+          });
+        })
+        .catch((error) => console.warn(error));
+      // ↑↑↑↑↑↑
+    };
+
+
+
     return {
       inputText,
       translatedText,
       translate,
+      textToSpeech,
+      speech,
     };
   },
 };
