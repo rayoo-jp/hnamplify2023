@@ -57,8 +57,15 @@ export default {
 
     const subscribe = async () => {
       // Subscription(onCreateMessages) の実装 1 ↓
-
+      subscription.value = API.graphql(graphqlOperation(onCreateMessage)).subscribe({
+        next: (eventData) => {
+          const message = eventData.value.data.onCreateMessage;
+          messages.value = [...messages.value, message];
+        },
+        error: (error) => console.warn(error),
+      });
       // ↑↑↑↑↑↑
+
     };
 
     const scrollBottom = () => {
