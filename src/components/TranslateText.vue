@@ -17,8 +17,9 @@ import { ref, watch } from 'vue';
 export default {
   setup() {
     const inputText = ref('');
-    const translatedText = ref('翻訳する文字列');
-    const textToSpeech = ref('翻訳する文字列');
+    const translatedText = ref('翻訳後の文字列');
+    const textToSpeech = ref('スピーチ');
+
 
     const translate = (text) => {
       if (!text.length) {
@@ -35,7 +36,11 @@ export default {
         },
       })
         .then((result) => {
+          // result.language = "en";
           translatedText.value = result.text;
+          console.log('inputText = ', inputText);
+          console.log('translateText result = ', result);
+          console.log('translateText translatedText= ', translatedText);
         })
         .catch((error) => {
           console.warn({ error });

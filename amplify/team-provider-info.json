@@ -12,9 +12,6 @@
       "AmplifyAppId": "dxujk73pr6u1l"
     },
     "categories": {
-      "auth": {
-        "hnamplify202334a49b11": {}
-      },
       "predictions": {
         "translateTextEN2JP": {},
         "identifyLabelse92d8c16": {},
@@ -22,8 +19,8 @@
         "identifyText1f4dc289": {},
         "speechGenerator68f43cd8": {}
       },
-      "geo": {
-        "mapcc7709cf": {}
+      "auth": {
+        "hnamplify2023620dd8d1": {}
       },
       "api": {
         "hnamplify2023": {}

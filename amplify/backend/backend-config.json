@@ -7,24 +7,17 @@
             "UserPoolId"
           ],
           "category": "auth",
-          "resourceName": "hnamplify202334a49b11"
+          "resourceName": "hnamplify2023620dd8d1"
         }
       ],
       "output": {
         "authConfig": {
-          "additionalAuthenticationProviders": [
-            {
-              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-              "userPoolConfig": {
-                "userPoolId": "authhnamplify202334a49b11"
-              }
-            }
-          ],
+          "additionalAuthenticationProviders": [],
           "defaultAuthentication": {
-            "apiKeyConfig": {
-              "apiKeyExpirationDays": 7
-            },
-            "authenticationType": "API_KEY"
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authhnamplify2023620dd8d1"
+            }
           }
         }
       },
@@ -33,7 +26,7 @@
     }
   },
   "auth": {
-    "hnamplify202334a49b11": {
+    "hnamplify2023620dd8d1": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -58,24 +51,7 @@
       "service": "Cognito"
     }
   },
-  "geo": {
-    "mapcc7709cf": {
-      "accessType": "AuthorizedUsers",
-      "dependsOn": [
-        {
-          "attributes": [
-            "UserPoolId"
-          ],
-          "category": "auth",
-          "resourceName": "hnamplify202334a49b11"
-        }
-      ],
-      "isDefault": true,
-      "mapStyle": "VectorHereExplore",
-      "providerPlugin": "awscloudformation",
-      "service": "Map"
-    }
-  },
+  "geo": {},
   "predictions": {
     "identifyLabelse92d8c16": {
       "dependsOn": [],

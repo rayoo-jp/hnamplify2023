@@ -4,14 +4,8 @@
     "apiName": "hnamplify2023",
     "serviceName": "AppSync",
     "defaultAuthType": {
-      "mode": "API_KEY",
-      "expirationTime": 7
-    },
-    "additionalAuthTypes": [
-      {
-        "mode": "AMAZON_COGNITO_USER_POOLS",
-        "cognitoUserPoolId": "authhnamplify202334a49b11"
-      }
-    ]
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authhnamplify2023620dd8d1"
+    }
   }
 }
