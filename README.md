@@ -1,4 +1,5 @@
 # hnamplify2023
+    <img src="..\data\AmplifyArchitecture.png" />
 Amplify Education Template 2023. 
 This template should help get you started developing with Vue 3 in Vite.
 
